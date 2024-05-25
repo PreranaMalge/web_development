@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter 2 - colors and background</title>
+    <style>
+        p{
+            color: darkorange;
+        }
+        .brown{
+            color: crimson;
+            background-color: beige;
+        }
+        body{
+            background-image:url(download\ \(1\).jpg);
+            background-repeat: repeat-x;
+        }
+        /* the image is by default repeated in x and y direction. */
+
+        /* the background repeat property
+        repeat-x => repeat in horizontal direction
+        repeat-y => repeat in vertical direction
+        no-repeat => image not repeat. */
+
+        /* the background size property
+          cover => fits and no empty space needed
+          contain => fits and image is fully visible.
+          auto => display in original size.
+          {{width}}=> set width and height will be set automatically.
+          {{width}} {{height}}=>  set width and height*/
+
+
+          /* background-position property
+          sets the starting position of a backgroung image.
+          div {
+            background-position:left top
+          }  */
+
+          div{
+            background-position: left top;
+          }
+
+          
+    </style>
+</head>
+<body>
+    <!-- css rules are simple key value paies as a selector.
+    we can write css rules to chanage color and set background
+
+    the color property:
+     -->
+    <p style="color: red;">color property</p>
+    <div>background property demo</div>
+     <!-- =>inline css -->
+
+     <!-- inline css is final css -->
+     <!-- if we don't write !important. -->
+
+     <!-- similarly we can set elements for different elements. -->
+
+     <!-- types of color values
+     1.RGB => specify color using red,green,blue values e.g. rgb(200,98,70)
+
+     2. HEX code => specify color using hex code.  e.g.#hh5678
+
+     3.HSL => specify the color using hsl value. e.g.hsl(8,90%,63%)
+                                                    =>hue saturation lightness. -->
+
+    <!-- notes=> we also have an RGBA and HSLA values for colors but they are rarely used by begineers.A stand for alpha. -->
+
+    <!-- background-color property=>
+    css background-color property specifies the background color of a container. -->
+
+    <p class="brown">brown </p>
+
+
+    <!-- background image property -->
+    used to set an image as a background.
+
+
+</body>
+</html>

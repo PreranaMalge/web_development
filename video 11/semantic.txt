@@ -1,0 +1,16 @@
+the semantic tags in html are as follows:
+
+<header>
+<footer>
+<section>
+<aside>
+<nav>
+<figure>
+<figcaption>
+<main>
+<p>
+
+the non semantic tags are as follows:
+
+<div>
+<span>

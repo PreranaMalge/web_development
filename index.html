@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css box model</title>
+    <!-- it contains elements as below:
+    1.content
+        the content of the box where text and images appear.
+    2.padding
+        clears an area around content.the padding is transperent.
+    3.border
+        border is goes around padding and content.
+    4.margin
+    =>  clears an area outside the border.margin is transperent. -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background-color: aqua;
+            color: black;
+        }
+
+        .box1 {
+            background-color: black;
+            color: antiquewhite;
+            padding: 10px;
+            margin: 0;
+            height: 50px;
+            border: 2px solid black;
+            box-sizing: border-box;
+
+        }
+
+        /* margin collapse=> means when we give 2 heights in different classes  then the maximum height is allocated. */
+        /* e.g.=> box 1 having height 25px and box 2 having height of 50px then maximun height allocated means 50px. */
+        /* if both boxes have same height then same will be height allocated.box */
+        .box2 {
+            background-color: red;
+            color: aqua 
+            margin: 0;
+            padding: 0;
+            height: 25px;
+            border: 2px solid black;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        i am a first div
+    </div>
+    <div class="box box2">
+        i am another div
+    </div>
+</body>
+
+</html>

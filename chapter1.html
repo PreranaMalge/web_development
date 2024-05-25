@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creating our fist css website</title>
+    <style>
+        /* css selectors=> */
+        /* a css selector is used to select an html element for styling. */
+        body{
+            color: red;
+            background: pink;
+        }
+        /* here body is selector.
+        color: red; => declaration(property:value)
+        background: pink; =>declaration. */
+
+        /* element selector=>it is used to select an element based of the tag name. */
+        h2{
+            color: aqua;
+        }
+
+        /* id selector=>it is used to select an element based on given id. */
+        #first{
+            color:rosybrown;
+            background: black;
+        }
+        /* # is for id. */
+
+        /* class selector=> it is used to select an element based on class .classes can be multiple.  */
+        .csecond{
+            background:red;
+      }
+
+
+      /* important notes */
+      /* we can group selectors like this:=> */
+        h1,h2,h3,div{
+            color: black;
+        }
+        /* =>all are black */
+
+        /* /* we can used element class as selector like this */
+        =>p.red{
+            color: blue;
+        }
+
+        /* * is used in the form of universal selector to select all elements */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* specificity rule=>
+        inline style will override external and internal css.
+        in this last css will be final . */
+
+        /* comments in css
+        => comments in css is text which is not parsed.
+        =>this are sentences /word ignored by the browser. */
+
+
+
+
+    </style>
+</head>
+<body>
+    <h2 id="first" class="csecond">ggg</h2>
+
+
+    <!-- what is dom?
+    =>dom standds for document object model.
+        when a page is loaded, a browser creatsa DOM of the pagewhich is constructed as a tree of object.
+
+    Html id and classes attribute?
+    => when an html element given an id,it serves as a unique identifier for that element.
+        when an html element given a class,more than one element can belong to a single class.
+        but every element must have unique id.
+
+        we can add multiple classes to an element like this=> -->
+
+        <div id="first" class="c1 c2 c3">
+            <!-- multiple classes followed by a space. -->
+        </div>
+
+        
+        <p class="red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ratione odio, modi saepe velit aspernatur dignissimos architecto consequatur praesentium! Explicabo, aut commodi. Itaque quo dolorem accusamus nemo cumque minus obcaecati dolore impedit nulla veniam!</p>
+
+        <!-- there are three ways to add css to html=>
+        1.<style tag>=> adding <style></style> to html.
+        2.inline css=> adding css using style attribute.
+        3.External css=>adding a stylesheet(.css) to html using <link rel="stylesheet" href=""> link tag. -->
+
+        
+
+       
+    
+</body>
+</html>

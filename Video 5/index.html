@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image,Table and Lists</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <!-- image tag -->
+    <img src="./download.jpg" alt="horse img" width="250">
+
+    <!-- Table tag -->
+    <table>
+        <thead>
+
+            <tr>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>language</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Prerana</td>
+                <td>Prograammer</td>
+                <td>java</td>
+            </tr>
+            <tr>
+                <!-- colspan manje 2 column merge houn ek column bante. -->
+                <!-- rowspan manje 2 rows merge houn 1 row bante. -->
+                <td colspan="2">sam</td>
+                <td rowspan="2">kanna</td>
+            </tr>
+            <tr>
+                <td colspan="2">sam</td>
+            </tr>
+            <tfoot>
+                <td colspan="3">now</td>
+            </tfoot>
+            
+        </tbody>
+    </table>
+
+        <!-- Lists -->
+        <!-- ul are by default disc -->
+        <ul>
+            <li>goat</li>
+            <li>horse</li>
+            <li>lion</li>
+        </ul>
+        <!-- ol are by default numbers -->
+        <ol>
+            <li>banana</li>
+            <li>apple</li>
+            <li>lemon</li>
+        </ol>
+</body>
+</html>
